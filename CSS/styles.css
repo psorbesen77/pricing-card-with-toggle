@@ -3,7 +3,7 @@ body {
     display: block;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 100vh;
     margin: 0;
 }
 
@@ -13,6 +13,7 @@ h1 {
 
 .price-container {
     text-align: center;
+    margin-top: 10px;
 }
 
 .toggle-container {
@@ -30,7 +31,7 @@ h1 {
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
+    width: 50px;
     height: 24px;
     
 }
@@ -100,13 +101,44 @@ input:checked + .slider:before {
 .price-display {
     display: flex;
     justify-content: center;
-
+    
 }
 
 .price {
     font-size: 2em;
     font-weight: bold;
-    margin: 0 15px;
+    margin: 0 17px;
     color: #333;
 }
 
+/* Create card container */
+.card-container {
+    display: block;
+    width: 45vh;
+    height: 45vh;
+    margin-left: 30rem;
+    justify-content: center;
+    margin-top: 50px;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    background-color: lemonchiffon;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    border-radius: 5px;
+
+}
+
+/* Adjust to make it responsive */
+
+@media (max-width: 768px) {
+    .card-container {
+      margin-left: 10rem; 
+    }
+  }
+  
+  @media (max-width: 390px) {
+    .card-container {
+      margin-left: 1rem; 
+      width: 38vh;
+    }
+  }
